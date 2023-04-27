@@ -1,7 +1,7 @@
 # CS230_project3
 
 #IMPLEMENTATIONS
-  we implemented replacement policies lru,lfu,fifo for LLC cache.
+we implemented replacement policies lru,lfu,fifo for LLC cache.
   These files are lfu.llc_repl,lru.llc_repl and fifo.llc_repl in replacement folder.
   we implemented prefetchers - next_line prefetcher for L1I,L1D,L2C,LLC and ip_stride prefetcher for L2C.
   These files are ip_stride.l2c_pref,next_line.l1i_pref,next_line.l1d_pref,next_line.l2c_pref,next_line.llc_pref in prefetcher folder.
