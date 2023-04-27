@@ -85,7 +85,7 @@ $ vim prefetcher/mypref.llc_pref
 $ vim replacement/myrepl.llc_repl
 ```
 
-4 Traces are available in "dpc3_traces" folder which we use to obtain the results.
+Note:- Four Traces are available in "dpc3_traces" folder which we use to obtain the results.
 All results we obtained are in "resultoftraces" folder . In this folder results are grouped in 4 different folders for 4 differet traces we used
 and in each trace folder we have results for inclusive, exclusive and noninclusive.
 if you want to run simulation for other trace add trace to dpc3_traces folder and follow above steps for running.
@@ -105,11 +105,11 @@ Note that we need to specify multiple trace files for `run_4core.sh`. `N_MIX` is
 
 
 
-## 4.Conclusions from results
+## 3. Conclusions from results
 Compared different cache hierarchies (different sizes of L1, L2, LLC,inclusive/non-inclusive/Exclusive) and cache replacement policies,
 with a baseline cache hierarchy, and which is best i.e improved cache performance.
-This is explained in  this "https://youtu.be/xpPgRtaQDPU" video.
-presentation used for this video is under this link - "https://iitbacin-my.sharepoint.com/:p:/g/personal/210050162_iitb_ac_in/EcQg3ZaIZM5LpteZEI22XQ4B7Hn6TeCOoLma49Ms6OXX6A?e=hqszBJ&nav=eyJzSWQiOjI1NiwiY0lkIjoyNDI0NTM4MzF9"
+- This is explained in  this "https://youtu.be/xpPgRtaQDPU" video.
+- presentation used for this video is under this link - "https://iitbacin-my.sharepoint.com/:p:/g/personal/210050162_iitb_ac_in/EcQg3ZaIZM5LpteZEI22XQ4B7Hn6TeCOoLma49Ms6OXX6A?e=hqszBJ&nav=eyJzSWQiOjI1NiwiY0lkIjoyNDI0NTM4MzF9"
 
 
 
