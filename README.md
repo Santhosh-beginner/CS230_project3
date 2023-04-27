@@ -24,7 +24,7 @@ git clone https://github.com/ChampSim/ChampSim.git
 There is no cache.cc in uploaded files.
 If you want to run for a particular cache policy like inclusive or exclusive or non-inclusive rename that file as cache.cc
 and comment out whole code of remaining 2 files.
-for example:-   
+- for example:-   
            to run for inclusive cache 
                 change cache_inclusive.cc to cache.cc
                 and comment out whole code in cache_exclusive and cache_noninclusive.
@@ -32,7 +32,11 @@ for example:-
 ### STEP-3
 
 ChampSim takes seven parameters: Branch predictor, L1I prefetcher, L1D prefetcher, L2C prefetcher, LLC prefetcher, LLC replacement policy, and the number of cores. 
-For example, `./build_champsim.sh bimodal no no no next_line lru 1` builds a single-core processor with bimodal branch predictor, no L1 instruction prefetcher, no L1/L2 data prefetchers, ip-stride LLC prefetcher and the baseline LRU replacement policy for the LLC.
+- For example:- 
+```
+./build_champsim.sh bimodal no no no next_line lru 1
+```
+builds a single-core processor with bimodal branch predictor, no L1 instruction prefetcher, no L1/L2 data prefetchers, ip-stride LLC prefetcher and the baseline LRU replacement policy for the LLC.
 ```
 $ ./build_champsim.sh bimodal no no no next_line lru 1
 
