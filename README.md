@@ -1,6 +1,6 @@
 # CS230_project3
 
-# IMPLEMENTATIONS
+## 1.IMPLEMENTATIONS
 we implemented replacement policies lru,lfu,fifo for LLC cache. 
 These files are lfu.llc_repl,lru.llc_repl and fifo.llc_repl in replacement folder.
   we implemented prefetchers - next_line prefetcher for L1I,L1D,L2C,LLC and ip_stride prefetcher for L2C.
@@ -13,13 +13,13 @@ These files are lfu.llc_repl,lru.llc_repl and fifo.llc_repl in replacement folde
 
 
 
-#INSTRUCTIONS TO RUN
-STEP-I
-# Clone ChampSim repository
+## 2.INSTRUCTIONS TO RUN
+### STEP-I
+#### Clone ChampSim repository
 ```
 git clone https://github.com/ChampSim/ChampSim.git
 ```
-STEP-2
+### STEP-2
 
 There is no cache.cc in uploaded files.
 If you want to run for a particular cache policy like inclusive or exclusive or non-inclusive rename that file as cache.cc
@@ -29,7 +29,7 @@ for example:-
                 change cache_inclusive.cc to cache.cc
                 and comment out whole code in cache_exclusive and cache_noninclusive.
 
-STEP-3
+### STEP-3
 
 ChampSim takes seven parameters: Branch predictor, L1I prefetcher, L1D prefetcher, L2C prefetcher, LLC prefetcher, LLC replacement policy, and the number of cores. 
 For example, `./build_champsim.sh bimodal no no no next_line lru 1` builds a single-core processor with bimodal branch predictor, no L1 instruction prefetcher, no L1/L2 data prefetchers, ip-stride LLC prefetcher and the baseline LRU replacement policy for the LLC.
@@ -40,9 +40,9 @@ $ ./build_champsim.sh ${BRANCH} ${L1I_PREFETCHER} ${L1D_PREFETCHER} ${L2C_PREFET
 ```
 Note :- use only implemented prefetchers and replacement polices as argumnets in above command.
 
-STEP-4
+### STEP-4
 
-# Run simulation
+#### Run simulation
 
 Execute `run_champsim.sh` with proper input arguments. The default `TRACE_DIR` in `run_champsim.sh` is set to `$PWD/dpc3_traces`. <br>
 
@@ -101,7 +101,7 @@ Note that we need to specify multiple trace files for `run_4core.sh`. `N_MIX` is
 
 
 
-#Conclusions from results
+## 4.Conclusions from results
 Compared different cache hierarchies (different sizes of L1, L2, LLC,inclusive/non-inclusive/Exclusive) and cache replacement policies,
 with a baseline cache hierarchy, and which is best i.e improved cache performance.
 This is explained in  this "https://youtu.be/xpPgRtaQDPU" video.
